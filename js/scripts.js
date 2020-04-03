@@ -7,29 +7,26 @@ function robotize(input){
   
   newArray.some(myFunction);
   function myFunction(newArray){
-    if(!newArray.includes(3)){
-      outputArray.push(input)
-      while(outputArray.length > newArray.length) {
-        outputArray.pop();
-         }
-    }else if(newArray.includes(3)){
+    if(newArray.includes(3)){
       while(outputArray.length > 0) {
         outputArray.pop();
       }
     outputArray.push(outputs[2])
-    return true
     }else if(newArray.includes(2)){
       while(outputArray.length > 0) {
         outputArray.pop();
       }
     outputArray.push(outputs[1])
-    return true
     }else if(newArray.includes(1)){
       while(outputArray.length > 0) {
         outputArray.pop();
       }
     outputArray.push(outputs[0])
-    return true
+    }else{
+      outputArray.push(input)
+      while(outputArray.length > newArray.length) {
+        outputArray.pop();
+      }
     }
       
   }
