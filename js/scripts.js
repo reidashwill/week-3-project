@@ -1,5 +1,5 @@
 function robotize(input){
-  const outputs = ["Beep!","Boop!"]
+  const outputs = ["Beep!","Boop!","Won't you be my neighbor?"]
   for(i=input; i<= outputs.length; i++){
     return outputs[(input - 1)];
   };
