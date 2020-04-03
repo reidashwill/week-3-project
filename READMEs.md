@@ -1,12 +1,17 @@
-# _{Application Name}_
+# _Independent Project Week 2_
 
-#### _{Brief description of application}, {Date of current version}_
+#### _Give Mr Roboger a number and see what he has to say!, 04/03/2020_
 
-#### By _**{List of contributors}**_
+#### By _**Reid Ashwil**_
 
-## Description
+## Specs
 
-_{This is a detailed description of your application. Its purpose and usage.  Give as much detail as needed to explain what the application does, and any other information you want users or other developers to have. }_
+_This web app will take number inputs from the user and return either the inputted number, or one of three predetermined strings based on what the user inputs_
+
+* _The program returns a range of numbers from 0 to the users inputted number_
+  * _INPUT: "4"_
+  * _OUTPUT: _
+
 
 ## Setup/Installation Requirements
 
