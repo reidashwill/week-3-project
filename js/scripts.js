@@ -1,14 +1,11 @@
 function robotize(input){
   const outputs = ["Beep!"]
-   if(input === 1){
-     console.log(outputs[0])
-     return outputs[0]
-   }
-  // for(i=input; i<=outputs.length; i ++){
-  //   return outputs[input-1]
-    
-  // }
-}
+  for(i=input; i<= outputs.length; i++){
+    return outputs[(input - 1)];
+  };
+  
+  
+};
 
 
 
