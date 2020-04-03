@@ -5,12 +5,21 @@ function robotize(input){
   
   function myFunction(newArray){
     var outputArray = []
-    if(newArray >=1 && newArray <=3){
-      outputArray.push(outputs[newArray-1])
+    if(newArray === 3){
+      outputArray.push(outputs[2])
       debugger;
-      console.log(outputArray)
       return true
-    };
+    }else if(newArray ===2 ){
+      outputArray.push(outputs[1])
+      debugger;
+      return true
+    }else if(newArray === 1){
+      outputArray.push(outputs[0])
+      debugger;
+      return true
+    } 
+    console.log(outputArray)
+    return outputArray
   }
 };
 
@@ -28,9 +37,3 @@ $(document).ready(function(){
     $(".outputField").append(" " + result);    
   });
 });
-
-
-// for(i=input; i<= outputs.length; i--){
-  //   return outputs[(input-1)];
-    
-  // };
