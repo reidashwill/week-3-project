@@ -7,8 +7,13 @@ function robotize(input){
   function myFunction(newArray){
       if(newArray.includes(3)){
       outputArray.push(outputs[2])
-      
-    }
+      }else if(newArray.includes(2)){
+        outputArray.push(outputs[1])
+      }else if(newArray.includes(1)){
+        outputArray.push(outputs[0])
+      }else{
+        outputArray.push(input)
+      }
     
   }
   console.log(outputArray.join());
