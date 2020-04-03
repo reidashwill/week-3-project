@@ -1,5 +1,5 @@
 function robotize(input){
-  const outputs = ["Beep!"]
+  const outputs = ["Beep!","Boop!"]
   for(i=input; i<= outputs.length; i++){
     return outputs[(input - 1)];
   };
@@ -18,7 +18,6 @@ $(document).ready(function(){
     console.log("test")
     var result = robotize(input);
     console.log("test")
-    debugger;
     $(".outputField").append(" " + result); 
     
   });
