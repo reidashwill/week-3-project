@@ -1,11 +1,15 @@
 function robotize(input){
   var outputs = ["Beep!","Boop!","Won't you be my neighbor?"]
-  var newArray = input.split("")
+  var inputString = input
+  inputNum = parseInt(inputString);
   var outputArray = []
-  console.log(newArray)
+  console.log(typeof inputString)
+  console.log(typeof inputNum);
 
   
-  for(i=0; i<= newArray; i++){
+  for(i=0; i<= inputNum; i++){
+    console.log(typeof i)
+    
     outputArray.push(i)
     
   }
