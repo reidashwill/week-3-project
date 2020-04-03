@@ -1,9 +1,17 @@
 function robotize(input){
-  const outputs = ["0","Beep!","Boop!","Won't you be my neighbor?","4","5","6","7","8","9"]
-  for(i=input; i<= outputs.length; i--){
-    return outputs[(input)];
+  const outputs = ["Beep!","Boop!","Won't you be my neighbor?"]
+  var newArray = input.split("")
+
+  newArray.forEach(function(newArray){
+    if(newArray[0] >=1 && newArray[0] <=3)
+    return outputs[newArray[0]];
+    debugger;
+  })
+  
+  // for(i=input; i<= outputs.length; i--){
+  //   return outputs[(input-1)];
     
-  };
+  // };
 };
 
 
@@ -13,10 +21,9 @@ function robotize(input){
 $(document).ready(function(){
   $("form#formGroup").submit(function(event){
     event.preventDefault();
-    var input = parseInt($("#userNumber").val());
+    var input = $("#userNumber").val();
     var result = robotize(input);
     $("#formGroup")[0].reset();
     $(".outputField").append(" " + result);    
-  debugger;
   });
 });
