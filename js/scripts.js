@@ -1,17 +1,16 @@
 function robotize(input){
   const outputs = ["Beep!","Boop!","Won't you be my neighbor?"]
   var newArray = input.split("")
-
-  newArray.forEach(function(newArray){
-    if(newArray[0] >=1 && newArray[0] <=3)
-    return outputs[newArray[0]];
-    debugger;
-  })
+  newArray.forEach(myFunction);
   
-  // for(i=input; i<= outputs.length; i--){
-  //   return outputs[(input-1)];
-    
-  // };
+  function myFunction(newArray){
+    if(newArray[0] >=1 && newArray[0] <=3){
+      console.log(outputs[parseInt(newArray[0])-1])
+      debugger;
+      return outputs[parseInt(newArray[0])]
+    }
+  }
+
 };
 
 
@@ -27,3 +26,9 @@ $(document).ready(function(){
     $(".outputField").append(" " + result);    
   });
 });
+
+
+// for(i=input; i<= outputs.length; i--){
+  //   return outputs[(input-1)];
+    
+  // };
