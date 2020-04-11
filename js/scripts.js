@@ -1,14 +1,11 @@
 function robotize(input){
-  var outputs = ["Beep!","Boop!","Won't you be my neighbor?"]
   var inputString = input
-  inputNum = parseInt(inputString);
-  console.log(typeof inputString)
-  console.log(typeof inputNum);
-
+  var inputNum = parseInt(inputString);
+  var outputArray = [];
   
   for(i=0; i<= inputNum; i++){
-    testNumber = i
-    var outputArray = []
+    testNumber = i;
+    
     if (i.toString().includes("3")) {
       outputArray.push("Won't you be my neighbor?")
     }else if (i.toString().includes("2")) {
@@ -18,9 +15,12 @@ function robotize(input){
     }else{
       outputArray.push(i)
     }
-    return outputArray  
-  }  
+    console.log(outputArray)
+  }
+  console.log(outputArray)
+  return outputArray
 };
+
 
 
 $(document).ready(function(){
@@ -29,6 +29,7 @@ $(document).ready(function(){
     var input = $("#userNumber").val();
     var output = robotize(input);
     $("#formGroup")[0].reset();
-    $(".outputField").append();    
+    $(".outputField").html("")
+    $(".outputField").append(" " + output);    
   });
 });
