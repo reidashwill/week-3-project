@@ -8,9 +8,16 @@ function robotize(input){
 
   
   for(i=0; i<= inputNum; i++){
-    console.log(typeof i)
+    testNumber = i
+      while(testNumber > 0){
+        if(testNumber%10 == 3){
+            outputArray.push(outputs[2])
+        }
+        testNumber = Math.trunc(testNumber / 10);        
+      }
     
-    outputArray.push(i)
+    
+
     
   }
   
