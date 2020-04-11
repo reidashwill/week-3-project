@@ -8,23 +8,18 @@ function robotize(input){
   
   for(i=0; i<= inputNum; i++){
     testNumber = i
+    var outputArray = []
     if (i.toString().includes("3")) {
-      testNumber = "Won't you be my neighbor?"
+      outputArray.push("Won't you be my neighbor?")
     }else if (i.toString().includes("2")) {
-      testNumber = "Boop!"
+      outputArray.push("Boop!")
     }else if (i.toString().includes("1")){
-      testNumber = "Beep!"
+      outputArray.push("Beep!")
+    }else{
+      outputArray.push(i)
     }
-  
-    console.log(testNumber)
-    
-    
-    
-
-    
-  }
-  
-  return (outputArray.join())
+    return outputArray  
+  }  
 };
 
 
@@ -34,6 +29,6 @@ $(document).ready(function(){
     var input = $("#userNumber").val();
     var output = robotize(input);
     $("#formGroup")[0].reset();
-    $(".outputField").append(" " + output);    
+    $(".outputField").append();    
   });
 });
