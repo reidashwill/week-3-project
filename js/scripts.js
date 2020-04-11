@@ -2,51 +2,28 @@ function robotize(input){
   var outputs = ["Beep!","Boop!","Won't you be my neighbor?"]
   var inputString = input
   inputNum = parseInt(inputString);
-  var outputArray = []
   console.log(typeof inputString)
   console.log(typeof inputNum);
 
   
   for(i=0; i<= inputNum; i++){
     testNumber = i
-      while(testNumber > 0){
-        if(testNumber%10 == 3){
-            outputArray.push(outputs[2])
-        }
-        testNumber = Math.trunc(testNumber / 10);        
-      }
+    if (i.toString().includes("3")) {
+      testNumber = "Won't you be my neighbor?"
+    }else if (i.toString().includes("2")) {
+      testNumber = "Boop!"
+    }else if (i.toString().includes("1")){
+      testNumber = "Beep!"
+    }
+  
+    console.log(testNumber)
+    
     
     
 
     
   }
   
-
-  // newArray.some(myFunction);
-  // function myFunction(newArray){
-  //   if(newArray.includes(3)){
-  //     while(outputArray.length > 0) {
-  //       outputArray.pop();
-  //     }
-  //   outputArray.push(outputs[2])
-  //   }else if(newArray.includes(2)){
-  //     while(outputArray.length > 0) {
-  //       outputArray.pop();
-  //     }
-  //   outputArray.push(outputs[1])
-  //   }else if(newArray.includes(1)){
-  //     while(outputArray.length > 0) {
-  //       outputArray.pop();
-  //     }
-  //   outputArray.push(outputs[0])
-  //   }else{
-  //     outputArray.push(input)
-  //     while(outputArray.length > newArray.length) {
-  //       outputArray.pop();
-  //     }
-  //   }
-      
-  // }
   return (outputArray.join())
 };
 
