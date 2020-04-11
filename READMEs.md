@@ -6,37 +6,58 @@
 
 ## Specs
 
-_This web app will take number inputs from the user and return either the inputted number, or one of three predetermined strings based on what the user inputs_
+_This web app will take number inputs from the user and return numbers counting up to their inputted number, with some alterations:_
 
-* _The program returns a range of numbers from 0 to the users inputted number_
-  * _INPUT: "4"_
-  * _OUTPUT: _
+* _Behavior 1: The program returns a range of numbers from 0 to the users inputted number_
+  * _INPUT: 4_
+  * _OUTPUT: 0, 1, 2, 3, 4_
 
+* _Behavior 2: the program will change the number 1 to "Beep!"_
+  * _INPUT: 4_
+  * _OUTPUT: 0, "Beep!", 2, 3, 4_
+
+* _Behavior 3: The program will also change the number 2 to "Boop!"_
+  * _INPUT: 4_
+  * _OUTPUT: 0, Beep!, Boop!, 3, 4_
+
+* _Behavior 3: The program will also change the number 3 to "Wont you be my neighbor?"_
+  * _INPUT: 4_
+  * _OUTPUT: 0, Beep!, Boop!, Wont you be my neighbor?, 4_
+
+* _Behavior 4: The program will also change larger numbers INCLUDING 1 to say "Beep!"_
+  * _INPUT: 13_
+  * _OUTPUT: 0, Beep!, Boop!, Wont you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Beep!, Beep!_
+
+* _Behavior 5: The program will also change larger numbers INCLUDING 2 to say "Boop!" this will take precedence over numbers that include 1._
+  * _INPUT: 13_
+  * _OUTPUT: 0, Beep!, Boop!, Wont you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Beep!_
+
+* _Behavior 6: The program will also change larger numbers INCLUDING 3 to say "Boop!" this will take precedence over numbers that include 1 and 2._
+  * _INPUT: 13_
+  * _OUTPUT: 0, Beep!, Boop!, Wont you be my neighbor?, 4, 5, 6, 7, 8, 9, Beep!, Beep!, Boop!, Wont you be my neightbor?_
 
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
+* _Naviagte to https://github.com/reidashwill/week-3-project _
+* _Clone the repository_
+* _Open index.html with your web browser of choice!_
 
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this app depends on?}_
+
 
 ## Known Bugs
 
-_{Are there issues that have not yet been resolved that you want to let users know you know?  Outline any issues that would impact use of your application.  Share any workarounds that are in place. }_
+_No known bugs at this time_
 
 ## Support and contact details
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_If you run into bugs, please reach out to me through github at https://github.com/reidashwill/week-3-project/issues _
 
 ## Technologies Used
 
-_{Tell me about the languages and tools you used to create this app. Assume that I know you probably used HTML and CSS. If you did something really cool using only HTML, point that out.}_
+_JavaScript, JQuery, Bootstrap, CSS, HTML5_
 
 ### License
 
-*{Determine the license under which this application can be used.  See below for more details on licensing.}*
+*This project is liesenced under the MIT lisence*
 
-Copyright (c) 2016 **_{List of contributors or company name}_**
+Copyright (c) 2020 **_Reid Ashwill_**
